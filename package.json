@@ -1,0 +1,7 @@
+{
+  "name": "posts",
+  "private": true,
+  "dependencies": {
+    "uikit": "^3.5.7"
+  }
+}

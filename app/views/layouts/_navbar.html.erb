@@ -1,0 +1,40 @@
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+      <h1><a class="uk-link-reset" href="/">suzuki's web_site</a></h1>
+    </div>
+    
+    <div class="uk-navbar-right">
+        
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="#">Menu</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="#"><a href="/">TOP</a></li>
+                        <li><a href="#">log in</a></li>
+                        <li><a href="#">create account</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <button class="uk-button uk-button-secondary uk-margin-small-right" type="button" uk-toggle="target: #modal-close-outside">profile</button>
+        <div id="modal-close-outside" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-outside" type="button" uk-close></button>
+                <div class="uk-width-auto">
+                        <img class="uk-border-circle" width="80" height="80" src=".jpg">
+                </div>
+                <h2 class="uk-modal-title">自己紹介</h2>
+                <p>岩手県釜石市生まれ。高校卒業後、宮城県仙台市で医療機関・コールセンターを経て震災を機にUターン。
+                    地元で働くも、WEBエンジニアを志すべく転職活動中。最終目標は<strong>「納品のない受託開発」</strong>。<br>制作物はこちら=><a href="#"> github <i uk-icon="icon: github-alt"></i></a></p>
+            </div>
+        </div>
+          <div class="uk-margin">
+            <form class="uk-search uk-search-default">
+              <a href="/" class="uk-search-icon-flip" uk-search-icon></a>
+                <input class="uk-search-input" type="search" placeholder="Search...">
+            </form>
+          </div>
+
+    </div>
+</nav>
