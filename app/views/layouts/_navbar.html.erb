@@ -2,16 +2,16 @@
     <div class="uk-navbar-left">
       <h1><a class="uk-link-reset" href="/">suzuki's web_site</a></h1>
     </div>
-        <div class="uk-navbar-right">
-            
+        <div class="uk-navbar-right"> 
+        <% if logged_in? %> 
             <ul class="uk-navbar-nav">
                 <li>
                     <a href="#">Menu</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="#"><a href="/">TOP</a></li>
-                            <li><a href="#">log in</a></li>
-                            <li><%= link_to 'create account', signup_path %></li>
+                            <li><%= link_to 'logout', logout_path, method: :delete %></li>
+                            <li>
                         </ul>
                     </div>
                 </li>
@@ -34,5 +34,18 @@
                     <input class="uk-search-input" type="search" placeholder="Search...">
                 </form>
             </div>
+        <% else %>
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="#">Menu</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><%= link_to 'log in', login_path %></li>
+                            <li><%= link_to 'create account', signup_path %></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+         <% end %>
     </div>
 </nav>
